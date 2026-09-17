@@ -26,69 +26,6 @@ VAPID_SUBJECT")
 Tolong bantu aku ya, soalnya sudah deadline, harus segera jadi malam ini
 
 
-SHEET ID
-1ZeV7A52sznMyLC4UWiBXBO7lFDh4ox0SPVlvsf3ooHY
-
-
-BACKGROUND-TOKEN
-APK-crossi-4213-aqimuddin
-
-WEB APP Url (exec)
-https://script.google.com/macros/s/AKfycbyrEy2210_W7w0AeK0GijbqYr9eKhuioky4RLeS8wfDZCSI3goh3JzmSe5jcCfVgJ1dKQ/exec
-
-Wrangler (cloudflare)
-Deployed apkmillah triggers (1.31 sec)
-  https://apkmillah.khoirulrosikin4.workers.dev
-Current Version ID: 339983b6-4df0-4f60-a672-c13c7b6ec4c6
-
-VAPID KEY (Cloudflare Variable and Secret)
-Public Key:
-BIBwl0b09K1OPee6-mvsl_Owo2Ag-hkC6KMKpMXT40h1DyDbtdY9Dr67VwpLWpfoMEBxg9-v59rS9vnnI2ggYyY
-
-Private Key:
-dG8mQRv6AugOTILeABRnIAEQgfWtdUGJ5_O6ITS5_3c
-
-File wrangler.toml
-name = "apkmillah-api"
-
-File worker.js
-if (url.pathname === '/') {
-      return new Response(JSON.stringify({ ok: true, service: 'APKMillah.khoirulrosikin4' }), {
-
-
-LINK KE GOOGLE CLIENT ID : https://console.cloud.google.com/auth/clients?project=teak-droplet-405904
--Google Client ID
-659690697997-nlo351n67sal85avlu0b3vl07fa118v5.apps.googleusercontent.com
-
--Client secret
-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
--Creation date
-September 17, 2026, 5:42:00 PM GMT+7
--Status
-Enabled
-
-LINK WORKER (Cloudflare)
-apkmillah.khoirulrosikin4.workers.dev
-
-API > https://api.imgbb.com/ 
-Login by google khoirulrosikin4@gmail.com
-22bfbb9cb3942eeb5f3bd4f79375a41f
-
-
-
-1. Tentang peringatan Google OAuth
-
-Bagian ini:
-
-function handleCredentialResponse(response) {
-  const payload = JSON.parse(atob(response.credential.split('.')[1]));
-  currentUser = { email: payload.email, name: payload.name, picture: payload.picture };
-  ...
-}
-
-menunjukkan aplikasi kamu memang menggunakan Google Sign-In, tetapi Client ID-nya tidak ada di app.js yang kamu kirim.
-
-Biasanya Client ID terlihat seperti:
 
 
 
