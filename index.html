@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-millahabel-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Millah Abel</title>
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginScreen" class="screen active">
+    <div class="card">
+      <h1>Millah Abel</h1>
+      <p>Catatan pribadi tersinkron</p>
+      <div id="g_id_onload"
+           data-client_id="659690697997-nlo351n67sal85avlu0b3vl07fa118v5.apps.googleusercontent.com"
+           data-callback="handleCredentialResponse"></div>
+      <div class="g_id_signin" data-type="standard"></div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboardScreen" class="screen">
+    <header>
+      <h2>Dashboard</h2>
+      <div>
+        <button id="btnHistory">History</button>
+        <button id="btnBg">Ganti BG</button>
+        <button id="btnLogout">Logout</button>
+      </div>
+    </header>
+    <div id="dashboardList"></div>
+    <button id="btnAdd" class="fab">+</button>
+  </div>
+
+  <!-- HISTORY -->
+  <div id="historyScreen" class="screen">
+    <header>
+      <h2>History</h2>
+      <button onclick="showScreen('dashboardScreen')">Kembali</button>
+    </header>
+    <div id="historyList"></div>
+  </div>
+
+  <!-- FORM -->
+  <div id="formScreen" class="screen">
+    <header>
+      <h2>Tambah Data</h2>
+      <button onclick="showScreen('dashboardScreen')">Tutup</button>
+    </header>
+    <input id="inpJudul" placeholder="Judul">
+    <textarea id="inpIsi" placeholder="Isi catatan..."></textarea>
+    <input type="file" id="inpGambar" accept="image/*">
+    <button id="btnSimpan">Simpan</button>
+  </div>
+
+  <input type="file" id="inpBackground" accept="image/*" style="display:none">
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js"></script>
+</body>
+</html>
