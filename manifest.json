@@ -1,6 +1,7 @@
 {
   "name": "Millah Abel",
   "short_name": "MillahAbel",
+<<<<<<< HEAD
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
@@ -10,3 +11,55 @@
     { "src": "icons/icon-millahabel-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
+=======
+  "description": "Aplikasi resmi Millah Abel untuk akses cepat layanan web.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "icons/icon-millahabel-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-millahabel-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-millahabel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-millahabel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "icons/icon-millahabel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tampilan Aplikasi Mobile"
+    },
+    {
+      "src": "icons/icon-millahabel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Aplikasi Desktop"
+    }
+  ]
+}
+>>>>>>> b7742a7 (simpan file laptop sebelum pull)
