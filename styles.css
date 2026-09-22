@@ -13,3 +13,20 @@ button:hover { background: #2563eb; }
 input, textarea { width: 100%; padding: 10px; margin: 6px 0; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: white; }
 textarea { min-height: 140px; resize: vertical; }
 .fab { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; font-size: 24px; }
+
+/* Perbaikan agar tombol login Google berada di tengah dan simetris */
+#google-login-button, 
+[id^="g_id_"], 
+.g_id_signin {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+}
+
+/* Memastikan teks deskripsi di atas tombol juga rapi di tengah */
+.catatan-pribadi, p {
+    text-align: center;
+    margin-bottom: 10px;
+}
